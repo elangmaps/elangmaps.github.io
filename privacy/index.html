@@ -2,78 +2,83 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Privacy Policy – Elang Maps</title><link rel="stylesheet" href="../style.css"><link rel="icon" href="../mascot.svg"></head>
 <body><header><div class="w"><a href="../"><img src="../mascot.svg" alt=""></a><a href="../"><b>Elang Maps</b></a></div></header>
-<main class="w"><nav class="lang"><a href="#id">Bahasa Indonesia</a></nav>
+<main class="w"><nav class="lang"><a href="#id">Bahasa Indonesia</a> · <a href="../terms/">Terms of Service</a></nav>
 <h1>Elang Maps – Privacy Policy</h1>
-<p><em>Last updated: 8 November 2026</em></p>
+<p><em>Last updated: 11 November 2026</em></p>
 <p>Elang Maps ("the app") is developed and published by <strong>Damatria Developer</strong>, an individual developer. Contact: <strong>damatria.dev@gmail.com</strong>.</p>
 <h2>Summary</h2>
-<p class="ringkas">Elang Maps works offline and keeps your data <strong>on your device</strong>. There is no account, no advertising, no analytics, and no tracking. Data leaves the device only when you choose to export or share it.</p>
+<p class="ringkas">Elang Maps works offline and keeps your data <strong>on your device</strong>. There is no account, no advertising, no analytics, and no tracking. The developer never receives your points, photos, or location. Data leaves the device only when you choose to export or share it.</p>
 <h2>Data the app uses</h2>
 <table>
-<thead>
-<tr>
-<th>Data</th>
-<th>Why it is used</th>
-<th>Where it is stored</th>
-</tr>
-</thead>
+<thead><tr><th>Data</th><th>Why it is used</th><th>Where it is stored</th></tr></thead>
 <tbody>
-<tr>
-<td>Precise location (GPS)</td>
-<td>To show your position, record points, measure areas and distances, and record tracks</td>
-<td>On the device only</td>
-</tr>
-<tr>
-<td>Location while track recording runs in the background</td>
-<td>Only after you tap <strong>Record track</strong>. A notification stays visible while recording, and recording stops when you stop it</td>
-<td>On the device only</td>
-</tr>
-<tr>
-<td>Camera and photos</td>
-<td>Photos you take or pick for a point, optionally stamped with coordinates</td>
-<td>On the device only</td>
-</tr>
-<tr>
-<td>Text you enter (point notes, categories, recorder name, project/client name, device code)</td>
-<td>Part of your field records and exports</td>
-<td>On the device only</td>
-</tr>
-<tr>
-<td>Files you import (GeoPDF, SHP, KML/KMZ, GeoJSON, ZIP backups)</td>
-<td>To display maps and targets, or restore data</td>
-<td>On the device only</td>
-</tr>
-</tbody>
-</table>
+<tr><td>Precise location (GPS)</td><td>To show your position, record points, measure areas and distances, and record tracks</td><td>On the device only</td></tr>
+<tr><td>Location while track recording runs in the background</td><td>Only after you tap <strong>Record track</strong>. A notification stays visible while recording, and recording stops when you stop it</td><td>On the device only</td></tr>
+<tr><td>Camera and photos</td><td>Up to 4 photos per point, taken in the app or picked from the gallery, optionally stamped with coordinates. Photos may contain location metadata (EXIF)</td><td>On the device only</td></tr>
+<tr><td>Text you enter (point notes, custom form fields, categories, recorder name, project name, device code)</td><td>Part of your field records and exports</td><td>On the device only</td></tr>
+<tr><td>Files you import (GeoPDF, SHP, KML/KMZ, GeoJSON, CSV, ZIP backups)</td><td>To display maps and targets, or restore data</td><td>On the device only</td></tr>
+<tr><td>Locations shared into the app from other apps (for example a place shared from Google Maps)</td><td>To pre-fill a new point with that location</td><td>On the device only</td></tr>
+<tr><td>Purchase status (Free or Pro)</td><td>To unlock Pro features. Purchases are handled by Google Play Billing under Google's own terms and privacy policy; the app only receives whether a purchase is active</td><td>On the device, and in your Google Play account</td></tr>
+</tbody></table>
 <h2>Network connections</h2>
+<p>The app makes no connection on its own except the ones listed here. Each shares your IP address and the requested content with that provider, under the provider's own privacy policy. None of them receives your GPS position, points, photos, or notes.</p>
 <ul>
-<li><strong>Basemap tiles.</strong> When the device is online and an online basemap is switched on, the app requests map tiles from the map provider (currently OpenStreetMap and Esri World Imagery). Like any web request, this shares your IP address and the map area being viewed with that provider, under its own privacy policy. The app does not send your GPS position, points, or photos to it.</li>
+<li><strong>Basemap tiles.</strong> When the device is online and an online basemap is switched on, the app requests map tiles for the map area on screen from the map provider: <a href="https://openfreemap.org">OpenFreeMap</a> (vector street map, data © OpenStreetMap contributors), OpenStreetMap raster tiles, and Esri World Imagery for satellite imagery.</li>
+<li><strong>Offline map download.</strong> When you tap <strong>Download area</strong>, the app downloads the street-map tiles for the area on screen from OpenFreeMap and stores them on the device.</li>
 <li><strong>Downloading a GeoPDF from a link.</strong> If you paste a link, the app downloads the file from that address (for example Google Drive or Dropbox).</li>
-<li>No other data is sent to the developer or to third parties.</li>
+<li><strong>Shared short links.</strong> If you share a shortened Google Maps link into the app (goo.gl or maps.app.goo.gl), the app follows that link once on Google's servers to read the coordinates it points to.</li>
+<li><strong>Checking for updates and purchases.</strong> The Google Play version checks purchases through Google Play Billing. The direct-download test version checks for a newer version on GitHub.</li>
 </ul>
 <h2>Sharing</h2>
-<p>The app never shares data on its own. When you tap <strong>Export</strong>, the app creates a ZIP file on your device and opens the Android share menu. You choose where it goes, for example WhatsApp, email, or Drive.</p>
+<p>The app never shares data on its own. When you tap <strong>Export</strong> or share a point, the app creates the file on your device and opens the Android share menu. You choose where it goes, for example WhatsApp, email, or Drive. Exported files can contain personal data you entered (such as the recorder's name) and photo location metadata, so share them only with people you trust.</p>
+<h2>Automatic backup</h2>
+<p>Once a day the app saves a backup ZIP of your data into the <code>Documents/ElangMaps/Backup</code> folder on the device (the 7 most recent are kept). This folder can be read by other apps and file managers on the same device. You can switch automatic backup off in Settings. The backup never leaves the device unless you copy or share it.</p>
 <h2>Retention and deletion</h2>
-<p>Data remains on your device until you delete points or folders in the app, clear the app's data, or uninstall the app. Uninstalling removes all app data from the device. Exported files you saved or shared elsewhere are not removed. Because the developer holds no copy of your data, there is nothing to request deletion of on our side.</p>
+<p>Data remains on your device until you delete points or folders in the app, clear the app's data, or uninstall the app. Uninstalling removes all app data from the device, except backup ZIPs in the Documents folder and files you exported or shared elsewhere, which you can delete yourself. Because the developer holds no copy of your data, there is nothing to request deletion of on our side.</p>
 <h2>Children</h2>
 <p>The app is a field-mapping tool for general audiences and is not directed at children under 13.</p>
 <h2>Security</h2>
-<p>Data is stored in the app's private storage on your device. Protect your device with a screen lock. Exported ZIP files are not encrypted, so share them only with people you trust.</p>
+<p>Data is stored in the app's private storage on your device. Protect your device with a screen lock. Exported and backup ZIP files are not encrypted.</p>
 <h2>Changes</h2>
 <p>If this policy changes, the new version will be published at this address with a new date.</p>
 <h2>Contact</h2>
 <p>Questions about this policy: <strong>damatria.dev@gmail.com</strong>.</p>
+
 <hr><div id="id" lang="id"><h1>Elang Maps – Kebijakan Privasi (Bahasa Indonesia)</h1>
-<p><em>Terakhir diperbarui: 8 November 2026</em></p>
+<p><em>Terakhir diperbarui: 11 November 2026</em></p>
 <p>Elang Maps ("aplikasi") dikembangkan dan diterbitkan oleh <strong>Damatria Developer</strong>, pengembang perorangan. Kontak: <strong>damatria.dev@gmail.com</strong>.</p>
-<p><strong>Ringkasnya:</strong> Elang Maps bekerja tanpa sinyal dan menyimpan data <strong>hanya di HP Anda</strong>. Aplikasi ini tidak memakai akun, iklan, analitik, atau pelacakan. Data keluar dari HP hanya kalau Anda sendiri mengekspor atau membagikannya.</p>
+<p class="ringkas">Elang Maps bekerja tanpa sinyal dan menyimpan data Anda <strong>di HP Anda sendiri</strong>. Tidak ada akun, iklan, analitik, atau pelacakan. Pengembang tidak pernah menerima titik, foto, atau lokasi Anda. Data keluar dari HP hanya bila Anda sendiri mengekspor atau membagikannya.</p>
+<h2>Data yang dipakai aplikasi</h2>
 <ul>
-<li><strong>Lokasi akurat (GPS):</strong> dipakai untuk posisi Anda, mencatat titik, mengukur, dan merekam jalur. Datanya disimpan di HP.</li>
-<li><strong>Lokasi saat rekam jalur di latar:</strong> hanya berjalan setelah Anda mengetuk <strong>Rekam jalur</strong>. Selama perekaman ada notifikasi yang tampil, dan perekaman berhenti saat Anda menghentikannya.</li>
-<li><strong>Kamera dan foto:</strong> foto titik, bisa diberi cap koordinat. Disimpan di HP.</li>
-<li><strong>Isian teks dan berkas impor</strong> (GeoPDF, SHP, KML/KMZ, GeoJSON, ZIP): disimpan di HP.</li>
-<li><strong>Koneksi jaringan:</strong> hanya dua jenis. Pertama, ubin peta latar dari penyedia peta (saat ini OpenStreetMap dan Esri World Imagery). Penyedia menerima alamat IP dan area peta yang dilihat, bukan titik atau foto Anda. Kedua, unduhan GeoPDF dari link yang Anda masukkan.</li>
-<li><strong>Berbagi:</strong> hanya lewat tombol Ekspor, lalu Anda sendiri yang memilih tujuannya.</li>
-<li><strong>Penghapusan:</strong> hapus titik atau folder di aplikasi, hapus data aplikasi, atau copot aplikasi. Pengembang tidak menyimpan salinan data Anda.</li>
-</ul></div>
+<li><strong>Lokasi akurat (GPS):</strong> untuk posisi Anda, mencatat titik, mengukur, dan merekam jalur. Disimpan di HP.</li>
+<li><strong>Lokasi saat rekam jalur di latar:</strong> hanya setelah Anda mengetuk <strong>Rekam jalur</strong>. Selama perekaman ada notifikasi, dan perekaman berhenti saat Anda menghentikannya.</li>
+<li><strong>Kamera dan foto:</strong> sampai 4 foto per titik, dari kamera atau galeri, bisa diberi cap koordinat. Foto bisa memuat metadata lokasi (EXIF). Disimpan di HP.</li>
+<li><strong>Isian teks</strong> (keterangan, formulir isian, kategori, nama petugas, nama proyek, kode HP) <strong>dan berkas impor</strong> (GeoPDF, SHP, KML/KMZ, GeoJSON, CSV, ZIP cadangan): disimpan di HP.</li>
+<li><strong>Lokasi yang dibagikan dari aplikasi lain</strong> (misalnya tempat dari Google Maps): dipakai untuk mengisi formulir titik baru. Disimpan di HP.</li>
+<li><strong>Status pembelian (Free atau Pro):</strong> diproses Google Play Billing dengan ketentuan dan kebijakan privasi Google. Aplikasi hanya menerima status apakah pembelian aktif.</li>
+</ul>
+<h2>Koneksi jaringan</h2>
+<p>Aplikasi tidak terhubung ke internet kecuali untuk hal berikut. Tiap koneksi mengirim alamat IP dan permintaan Anda ke penyedia tersebut sesuai kebijakan privasinya masing-masing. Tidak satu pun menerima posisi GPS, titik, foto, atau catatan Anda.</p>
+<ul>
+<li><strong>Ubin peta latar:</strong> saat HP online dan peta latar online dinyalakan, aplikasi meminta ubin peta untuk area yang tampil di layar dari <a href="https://openfreemap.org">OpenFreeMap</a> (peta jalan vektor, data © kontributor OpenStreetMap), ubin OpenStreetMap, dan citra satelit Esri World Imagery.</li>
+<li><strong>Unduh peta offline:</strong> saat Anda mengetuk <strong>Unduh area</strong>, ubin peta jalan untuk area di layar diunduh dari OpenFreeMap dan disimpan di HP.</li>
+<li><strong>Unduh GeoPDF dari link</strong> yang Anda tempel (misalnya Google Drive atau Dropbox).</li>
+<li><strong>Link pendek yang dibagikan:</strong> bila Anda membagikan link pendek Google Maps (goo.gl atau maps.app.goo.gl) ke aplikasi, aplikasi mengikuti link itu sekali di server Google untuk membaca koordinatnya.</li>
+<li><strong>Cek pembaruan dan pembelian:</strong> versi Google Play memeriksa pembelian lewat Google Play Billing. Versi uji unduhan langsung memeriksa versi terbaru di GitHub.</li>
+</ul>
+<h2>Berbagi</h2>
+<p>Aplikasi tidak pernah membagikan data sendiri. Saat Anda mengetuk <strong>Ekspor</strong> atau membagikan titik, berkasnya dibuat di HP lalu menu Bagikan Android terbuka, dan Anda yang memilih tujuannya. Berkas ekspor bisa memuat data pribadi yang Anda isi (misalnya nama petugas) dan metadata lokasi foto, jadi bagikan hanya kepada orang yang Anda percaya.</p>
+<h2>Cadangan otomatis</h2>
+<p>Sekali sehari aplikasi menyimpan ZIP cadangan ke folder <code>Documents/ElangMaps/Cadangan</code> di HP (7 terakhir disimpan). Folder ini bisa dibaca aplikasi lain dan pengelola berkas di HP yang sama. Cadangan otomatis bisa dimatikan di Pengaturan, dan tidak pernah keluar dari HP kecuali Anda salin atau bagikan.</p>
+<h2>Penyimpanan dan penghapusan</h2>
+<p>Data tetap di HP sampai Anda menghapus titik atau folder di aplikasi, menghapus data aplikasi, atau mencopot aplikasi. Mencopot aplikasi menghapus semua data aplikasi, kecuali ZIP cadangan di folder Documents dan berkas yang sudah Anda ekspor, yang bisa Anda hapus sendiri. Pengembang tidak menyimpan salinan data Anda, jadi tidak ada yang perlu dimintakan penghapusan di pihak kami.</p>
+<h2>Anak-anak</h2>
+<p>Aplikasi ini alat pemetaan lapangan untuk umum dan tidak ditujukan untuk anak di bawah 13 tahun.</p>
+<h2>Keamanan</h2>
+<p>Data disimpan di penyimpanan privat aplikasi di HP Anda. Lindungi HP dengan kunci layar. Berkas ekspor dan cadangan tidak dienkripsi.</p>
+<h2>Perubahan</h2>
+<p>Bila kebijakan ini berubah, versi barunya diterbitkan di alamat ini dengan tanggal baru.</p>
+<h2>Kontak</h2>
+<p>Pertanyaan tentang kebijakan ini: <strong>damatria.dev@gmail.com</strong>.</p>
+</div>
 </main><footer>© 2026 Damatria Developer</footer></body></html>
